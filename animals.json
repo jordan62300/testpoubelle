@@ -1,0 +1,16 @@
+{
+    "animals" : [
+        {
+            "prenom": "jean claude",
+            "age": 18
+        },
+        {
+            "prenom": "bernard ",
+            "age": 11
+        },
+        {
+            "prenom": "reussite ",
+            "age": 5
+        }
+    ]
+}

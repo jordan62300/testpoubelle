@@ -1,0 +1,136 @@
+
+*{
+    box-sizing: border-box;
+    border: 0;
+	margin: 0;
+	padding: 0
+}
+
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1
+{
+     margin:0;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* menu */
+
+
+
+.nav {
+    display :flex;
+    background-color:rgba(10, 10, 10, 0.7);
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    
+}
+.logo {
+    display:flex;
+    justify-content:center;
+}
+.menu{
+    display:flex;
+    flex-direction:row;
+    padding: 15px 0px;
+    margin: 0  ;
+}
+.menu li  {
+
+ margin: 3px 25px;
+ padding: 8px;
+ text-align: center;
+ justify-content: start;
+}
+
+.menu li a   {
+    font-weight: bold;
+    color:white;
+    opacity: 1
+        
+}
+
+.menu li a:hover{
+    color:#F4A460;
+   
+}
+
+.menuSide{
+    
+    padding: 15px 0px;
+    margin: 0 ;
+    justify-self:end;
+}
+
+
+.menuSide li{
+    margin: 3px 25px;
+    padding: 8px 28px;
+    text-align: center;
+    justify-self: end;
+    background-color:rgb(252, 223, 3);
+    border-radius: 10px;
+    font-weight: bold;
+    -webkit-box-shadow: -3px 4px 43px 11px rgba(0,0,0,0.6);
+    -moz-box-shadow: -3px 4px 43px 11px rgba(0,0,0,0.6);
+    box-shadow: -3px 4px 43px 11px rgba(0,0,0,0.6);
+}
+
+.menuSide li a{
+    color:black
+}
+
+.current{
+    color:rgb(252, 223, 3);
+}
+
+.logo-sm{
+    display:none;
+    visibility: hidden;
+}
+
+@media screen and (max-width:1000px){
+    .logo-sm{
+        
+        visibility:visible;
+        display:flex;
+        justify-content:center;
+        background-color: #F4A460
+    }
+    
+
+    .logo {
+        display:none;
+        visibility: hidden;
+    }
+
+    .menu{
+        display:flex;
+        flex-direction: column;
+        background-color:black;
+    }
+
+    .menu li{
+        margin-top:6px;
+    }
+    .nav{
+        display: initial;
+        
+    }
+    
+    .menu li a {
+        color:white;
+    }
+}
